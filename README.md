@@ -64,7 +64,9 @@ GET http://localhost:8080/accounts/1/balance
   "balance": 100000
 }
 
-💸 Transferir dinheiro
+
+
+####💸 Transferir dinheiro
 
 POST /transfer
 
@@ -84,21 +86,24 @@ Resposta:
 }
 
 
-🧠 Lógica da Aplicação
-As contas são armazenadas em memória (slice de structs)
-A transferência atualiza diretamente os saldos das contas
-Não há persistência em banco de dados (projeto educacional)
-⚠️ Melhorias futuras
-Validação de saldo insuficiente
-Uso de banco de dados (MySQL, PostgreSQL, etc.)
-Autenticação e autorização (JWT)
-Logs e tratamento de erros mais robusto
-Testes automatizados
-📚 Objetivo
+####🧠 Lógica da Aplicação
 
-Este projeto foi desenvolvido com fins de estudo para praticar:
+- As contas são armazenadas em memória (slice de structs)
+- A transferência atualiza diretamente os saldos das contas
+- Não há persistência em banco de dados (projeto educacional)
 
-Criação de APIs REST com Go
-Uso do framework Gin
-Manipulação de requisições HTTP
-Estruturação de projetos backend
+####⚠️ Melhorias futuras
+- Validação de saldo insuficiente
+- Uso de banco de dados (MySQL, PostgreSQL, etc.)
+- Autenticação e autorização (JWT)
+- Logs e tratamento de erros mais robusto
+- Testes automatizados
+
+
+####📚 Objetivo
+- Este projeto foi desenvolvido com fins de estudo para praticar:
+
+- Criação de APIs REST com Go
+- Uso do framework Gin
+- Manipulação de requisições HTTP
+- Estruturação de projetos backend
