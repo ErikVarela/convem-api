@@ -94,6 +94,7 @@ Resposta:
 - Não há persistência em banco de dados (projeto educacional)
 
 ####⚠️ Melhorias futuras
+
 - Validação de saldo insuficiente
 - Uso de banco de dados (MySQL, PostgreSQL, etc.)
 - Autenticação e autorização (JWT)
@@ -102,6 +103,7 @@ Resposta:
 
 
 ####📚 Objetivo
+
 - Este projeto foi desenvolvido com fins de estudo para praticar:
 
 - Criação de APIs REST com Go
