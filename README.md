@@ -66,7 +66,7 @@ GET http://localhost:8080/accounts/1/balance
 
 ---
 
-####💸 Transferir dinheiro
+#### 💸 Transferir dinheiro
 
 POST /transfer
 
@@ -87,13 +87,13 @@ Resposta:
 
 ---
 
-####🧠 Lógica da Aplicação
+#### 🧠 Lógica da Aplicação
 
 - As contas são armazenadas em memória (slice de structs)
 - A transferência atualiza diretamente os saldos das contas
 - Não há persistência em banco de dados (projeto educacional)
 
-####⚠️ Melhorias futuras
+#### ⚠️ Melhorias futuras
 
 - Validação de saldo insuficiente
 - Uso de banco de dados (MySQL, PostgreSQL, etc.)
@@ -102,7 +102,7 @@ Resposta:
 - Testes automatizados
 
 
-####📚 Objetivo
+#### 📚 Objetivo
 
 - Este projeto foi desenvolvido com fins de estudo para praticar:
 
