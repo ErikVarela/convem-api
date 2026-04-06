@@ -1,31 +1,43 @@
-# 💰 Banking API em Go (Golang)
+# 💰 Wallet API - Sistema Bancário em Go
 
-Este projeto é uma API REST simples desenvolvida em **Go (Golang)** utilizando o framework **Gin**.  
-A aplicação simula operações básicas de um sistema bancário, como consulta de saldo e transferência de dinheiro entre contas.
+Esta é uma API REST desenvolvida em Go (Golang) utilizando o framework Gin. A aplicação simula operações bancárias essenciais com persistência de dados e segurança em transações.
 
 ---
 
-## 🚀 Tecnologias utilizadas
+## 🚀 Novidades da Versão 2.0
 
-- Go (Golang)
-- Gin Gonic (framework web)
-- HTTP/REST
+Diferente da versão inicial que utilizava armazenamento em memória (slices), esta atualização traz:
+
+- **Persistência de Dados:** Integração com SQLite para manter os dados mesmo após reiniciar a aplicação.
+- **Transações SQL:** Uso de `Begin`, `Commit` e `Rollback` para garantir a integridade financeira (o dinheiro nunca "some" se houver um erro no meio do processo).
+- **Driver Pure Go:** Utilização do driver `modernc.org/sqlite`, permitindo a execução em qualquer ambiente sem dependência de compiladores C (CGO).
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- Go (Golang) 1.20+
+- Gin Gonic (Framework Web)
+- SQLite (Banco de dados embutido)
+- Modernc SQLite (Driver nativo para Go)
 
 ---
 
 ## 📌 Funcionalidades
 
-- 🔍 Consultar saldo de uma conta
-- 💸 Transferir dinheiro entre contas
+- **Consultar Saldo:** Busca em tempo real no banco de dados por ID.
+- **Transferência Bancária:** Operação atômica entre duas contas.
+- **Auto-Bootstrap:** O banco de dados e as tabelas são criados automaticamente na primeira execução.
 
 ---
 
 ## 📂 Estrutura do Projeto
 
-├── main.go
-
-
----
+```plaintext
+├── main.go      # Lógica da API e conexão com banco
+├── go.mod       # Gerenciamento de dependências
+├── banco.db     # Arquivo do banco de dados (gerado automaticamente)
+└── .gitignore   # Proteção para não subir o arquivo de banco
 
 ## ⚙️ Como executar o projeto
 
