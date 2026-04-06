@@ -40,6 +40,8 @@ Diferente da versão inicial que utilizava armazenamento em memória (slices), e
 └── .gitignore   # Proteção para não subir o arquivo de banco
 ´´´
 
+---
+
 ## ⚙️ Como executar o projeto
 
 ### 1. Clone o repositório
